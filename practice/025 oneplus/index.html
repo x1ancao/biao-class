@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .wrapper{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header{
+            background-color: #FFFFFF;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            height: 40px;
+            width: 40px;
+            background-color: crimson;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .nav-link-group{
+            display: flex;
+        }
+        .nav-link-group a,.other a{
+            text-decoration: none;
+            color: #5e5e5e;
+            font-size: 14px;
+        }
+        .nav-link-group a{
+            padding: 20px 25px;
+        }
+        .nav-link-group a:hover{
+            color: red;
+            padding-bottom:18px;
+            border-bottom: 2px red solid;
+        }
+        .other a{
+            padding: 0 5px;
+        }
+        .other a:hover{
+            color: #000000;
+            padding-bottom: 19px;
+            border-bottom: 2px #000000 solid;
+        }
+
+        /*nav end*/
+
+
+
+
+        .main{
+            height: 900px;
+            background-image: url("4cb3486e8d48c78737b5f248a9873eac.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .footer{
+            height: 60px;
+            background-color: #333333;
+        }
+
+
+        .ad{
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            justify-content: center;
+        }
+        .ad > *{
+            color: #b0b3b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper nav">
+            <div class="logo"></div>
+            <div class="nav-link-group">
+                <a href="">Oneplus</a>
+                <a href="">商城</a>
+                <a href="">服务</a>
+                <a href="">品牌</a>
+                <a href="">论坛</a>
+            </div>
+            <div class="other">
+                <a href="">个人中心</a>
+                <a href="">购物车</a>
+                <a href="">搜索</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wrapper ad">
+            <span class="sub-title">oneplus 6T 新品发布会</span>
+            <span class="title">Unlock The Speed</span>
+            <a href="">立即参与</a>
+            <p>11月5日 14：00 深圳大运中心体育馆</p>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

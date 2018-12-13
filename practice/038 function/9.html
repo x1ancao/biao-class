@@ -1,0 +1,20 @@
+<script>
+    //造一个函数filterGlue，可以传入数组，且只连接内部所有的字符串元素
+
+    function filterGlue(arr) {
+        let str = ''
+        for (let i = 0; i < arr.length; i++) {
+            if (typeof arr[i] == 'string') {
+                str += arr[i]
+            }
+            else {
+                continue;
+            }
+        }
+        return str
+    }
+
+    list = ['0', 'A', 2, '3', null, NaN]
+    result = filterGlue(list)
+    document.write(result)
+</script>

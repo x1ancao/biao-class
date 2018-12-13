@@ -1,0 +1,70 @@
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+    }
+
+
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        background: #333333;
+        width: 5050px;
+        transition: all 0.6s;
+
+    }
+</style>
+<div class="wrapper">
+    <div class="slide" style="">
+        <a class="item" href=""><img src="./1.png" alt=""></a><a class="item" href=""><img src="./2.png" alt=""></a><a
+            class="item" href=""><img src="./3.png" alt=""></a><a class="item" href=""><img src="./4.png" alt=""></a>
+    </div>
+</div>
+<script>
+    const slide = document.querySelector('.slide');
+    const items = slide.querySelectorAll('.item')
+
+    current = 0;
+
+    setInterval(() => {
+        if (current <= items.length) {
+            if (current == 0) {
+                start()
+            }
+            else {
+                if (current == items.length) {
+                    quick()
+                }
+                else {
+                    currents()
+                }
+            }
+        }
+        else {
+            current = 0;
+        }
+        current += 1;
+    }, 2000);
+
+    function start() {
+        slide.setAttribute('style', 'left:0')
+    }
+    function currents() {
+        slide.setAttribute('style', ('left:' + (-(current) * 1015 + 'px')))
+    }
+    function quick() {
+        slide.setAttribute('style', ('transition: all 0'))
+    }
+
+</script>

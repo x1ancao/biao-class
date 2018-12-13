@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+
+    <style>
+        body{
+            margin: 0;
+            background-color: #b0b3b4;
+        }
+        .wrapper{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header{
+            background-color: #FFFFFF;
+        }
+        .nav{
+            display: flex;                  /*指定为flex布局方式*/
+            justify-content: space-between; /* 指定对齐方式为 space-between：两端对齐，项目之间的间隔都相等*/
+        }
+        .logo{
+            height: 40px;
+            width: 40px;
+            background-color: tomato;
+            align-self: center;              /*指定 子项目 对齐方式为居中*/
+        }
+
+        .link-group a,.other a{
+            text-decoration: none;
+            color: #b0b3b4;
+            font-size: 14px;
+        }
+
+        .link-group a{
+            line-height: 60px;
+            padding: 22px 30px;
+        }
+
+        .link-group a:hover{
+            color: red;
+            border-bottom: 2px red solid;
+            transition: color 1s;
+        }
+
+        .other{
+            align-self: center /*指定 子项目 对齐方式为居中*/
+        }
+        .other a{
+            padding-left: 15px;
+        }
+        /*tips:只有三个容器，nav link-group other 通过justify-content让子项目两端对齐，项目之间间隔相等*/
+    </style>
+
+
+
+
+</head>
+<body>
+<div class="header">
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+            </div>
+            <div class="link-group">
+                <a href="">Oneplus</a>
+                <a href="">商城</a>
+                <a href="">服务</a>
+                <a href="">品牌</a>
+                <a href="">论坛</a>
+            </div>
+            <div class="other">
+                <a href=""><span class="fa fa-file"></span></a>
+                <a href=""><span class="fa fa-file"></span></a>
+                <a href=""><span class="fa fa-file"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

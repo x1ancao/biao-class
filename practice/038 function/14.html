@@ -1,0 +1,15 @@
+<script>
+    // 造一个函数evenMaker，生成新数组，数组中的元素均为偶数
+
+    function evenMaker(x) {
+        list = []
+        for (let i = 0; i <= x; i++) {
+            if (i % 2 == 0) {
+                list.push(i)
+            }
+        }
+        return list
+    }
+    result = evenMaker(2)
+    document.write(result)
+</script>

@@ -1,0 +1,46 @@
+<meta charset='utf-8'>
+
+<script>
+    //造一个基础函数eachStr()，可以传入字符串组成的数组和一个回调函数
+    // 基于此函数造出：
+
+    // getYo()，getYo(['a', 'yo', 'yoo']) // ['yo', 'yoo']
+    // shortStr()，shortStr(['a', 'foo', 'b', 'bar'] // ['a', 'b'])
+    // join()，join(['Y', 'o', 'o']) // Yoo
+    // search()，search(['背背山', '六六坡', '背背路'], '背背') // ['背背山', '背背路']
+    // exclude()，exclude(['背背山', '六六坡', '背背路'], '背背') // ['六六坡']
+
+    function eachStr(list, func) {
+        for (let i = 0; i < list.length; i++) {
+            func(list[i]);
+        }
+    }
+
+
+    // getYo()，getYo(['a', 'yo', 'yoo']) // ['yo', 'yoo']
+
+    // function getYo(arg) {
+    //     let arr = []
+    //     eachStr(arg, function (it) {
+    //         if (it.includes('yo')) {
+    //             arr.push(it);
+    //         }
+    //     });
+    //     return arr;
+    // }
+    // console.log(getYo(['a', 'yo', 'yoo', 'yuo']));
+
+
+    // search()，search(['背背山', '六六坡', '背背路'], '背背') // ['背背山', '背背路']
+
+    function search(arg,key){
+        let arr = []
+        eachStr(arg, it => {       //ES6
+            if (it.includes(key)) {
+                arr.push(it);
+            }
+        });
+        return arr;
+    }
+    console.log(search(['背背山', '六六坡', '背背路'], '背背'))
+</script>

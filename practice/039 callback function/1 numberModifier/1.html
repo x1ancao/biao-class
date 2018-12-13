@@ -1,0 +1,59 @@
+<script>
+    /*
+    造一个基础函数numberModifier()，可以传入一个数字和一个回调函数
+    
+    numberModifier()要进行类型检查，如果基础函数中传入非数字类型的数据要报错提示（throw '请传入数字类型'）
+    
+    基于此函数造出：
+    
+    1. increment()，increment(1) // 2 increment(2) // 3
+    2. double()，double(1) // 2 double(10) // 20
+    3. decuple()，decuple(1) // 10 decuple(10) // 100
+    4. list()，list(3) // [1, 2, 3]
+    */
+
+
+    function numberModifier(arg, func) {
+        if (typeof arg != 'number') {
+            throw "请输入数字类型参数"
+        }
+        else {
+            return func(arg)
+        }
+    }
+
+
+    //1. increment()，increment(1) // 2 increment(2) // 3
+    // function increment(arg) {
+    //     return numberModifier(arg, function (arg) { return arg += 1 })
+    // }
+    // console.log(increment(4))
+
+
+
+    //2. double()，double(1) // 2 double(10) // 20
+    // function double(arg) {
+    //     return numberModifier(arg, it => it *= 2)
+    // }
+    // console.log(double(10))
+
+
+    //3. decuple()，decuple(1) // 10 decuple(10) // 100
+    // function decuple(arg) {
+    //     return numberModifier(arg, it => it *= 10)
+    // }
+    // console.log(decuple(10))
+
+
+    //4. list()，list(3) // [1, 2, 3]
+    // function list(arg) {
+    //     return numberModifier(arg, function (it) {
+    //         let result = [];
+    //         for (let i = 1; i <= it; i++) {
+    //             result.push(i)
+    //         };
+    //         return result;
+    //     });
+    // }
+    // console.log(list(10))
+</script>

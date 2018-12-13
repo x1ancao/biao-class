@@ -1,0 +1,66 @@
+<meta charset='utf-8'>
+<style>
+    .wrapper {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .slide {
+        position: relative;
+    }
+
+    .item {
+        position: absolute;
+        display: block;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+</style>
+<html>
+<div class="wrapper">
+    <div class="slide">
+        <a class='item' href=""><img src="./img/1000x500-A.png" alt=""></a>
+        <a class='item' href=""><img src="./img/1000x500-B.png" alt=""></a>
+        <a class='item' href=""><img src="./img/1000x500-C.png" alt=""></a>
+    </div>
+</div>
+
+</html>
+<script>
+    let parent = document.querySelector('.slide');
+    let slides = parent.querySelectorAll('.item');  
+    current = 0;//从列表组第一个开始循环
+
+    setInterval(() => {
+
+        //++current; //别放在这里，放在下面！！！//#1
+
+        //从第一个图片开始，依次拿出来图片下标，当到最后一个时，又重新开始从第一个图片拿。
+        if (current >= slides.length) {
+            current = 0;
+        }
+
+        //总体是保持处于crurnet下标的那个图片显示，且它后面的那个图片隐藏。
+
+
+        if (current == 0) {
+            slides[slides.length - 1].style.opacity = 0;
+            //如果那个图片是第一个，那它后面的那个图片就是最后一个
+        }
+        else {
+            slides[current - 1].style.opacity = 0
+            //如果是它前后都有图片，它前面的那个就是下标为current-1的那个
+        }
+
+
+        slides[current].style.opacity = 1;//一直让处于current下标值的图片显示
+
+        ++current;//这里是个坑，最好放在最后，顺应规律，逻辑，它本来就是从0开始，我们取下标也是从第一个开始的。
+        //ps 课程里面是放在#1处。所以从第二个图开始了。
+    }, 1000);
+</script>

@@ -1,0 +1,21 @@
+<script>
+    //造一个函数filterSum，可以将传入数组，且只求和内部所有的数字元素
+
+    function filterSum(arr) {
+        let sum = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (typeof arr[i] != 'number') {
+                continue;
+            }
+            else {
+                sum += arr[i]
+            }
+        }
+        return sum
+    }
+
+    list = [1, 'A', 3, '4', null, 6]
+    result = filterSum(list)
+
+    document.write(result)
+</script>

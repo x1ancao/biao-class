@@ -1,0 +1,149 @@
+<style>
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .row:before,
+    .row:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .row{
+        padding: 10px;
+        border: darkgreen 3px solid;
+        margin-bottom: 10px;
+    }
+    .col{
+        float: left;
+        border: crimson 3px solid;
+        padding: 10px;
+    }
+
+    .float-r{
+     float: right;
+    }
+    .wrapper{
+        margin: 10px auto;
+        max-width: 1200px;
+        /*以下两行只是为了表达视觉效果加的*/
+        border: darkorange 3px solid;
+        padding: 3px;
+    }
+    .item{
+        padding: 3px;
+        border: blue 8px solid;
+    }
+
+
+
+
+    .col-1{
+        width: 8.3333333333%;
+    }
+    .col-2{
+        width: 16.66666666%;
+    }
+    .col-3{
+        width: 25%
+    }
+    .col-4{
+        width: 33.33333333%;
+    }
+    .col-5{
+        width: 41.66666666%;
+    }
+    .col-7{
+         width: 58.33333333%;
+     }
+    .col-8{
+        width: 66.666666666%;
+    }
+    .col-11{
+        width: 91.66666666%;
+    }
+
+
+
+
+
+</style>
+
+
+<div class="row header">
+    <div class="col col-5">nav link group</div>
+    <div class="col col-2 float-r">login link group</div>
+</div>
+
+
+
+<div class="row content">
+    <div class="wrapper">
+        <div class="row nav">
+            <div class="col col-8">secondary nav link group</div>
+            <input>
+            <button>click here plz</button>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="row">
+            <div class="col col-8">
+                <div class="row item">
+                    <div class="col col-1">like</div>
+                    <div class="col col-11">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque dicta dolores eligendi excepturi hic illum impedit itaque libero magni minus non officia perferendis quas sit veniam vitae? Aperiam, quisquam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores commodi dignissimos doloremque doloribus ducimus error eum fugit in ipsa iure nostrum officiis perspiciatis placeat quidem, ratione sint sunt velit?
+                    </div>
+                </div>
+                <div class="row item">
+                    <div class="col col-1">like</div>
+                    <div class="col col-11">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque dicta dolores eligendi excepturi hic illum impedit itaque libero magni minus non officia perferendis quas sit veniam vitae? Aperiam, quisquam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores commodi dignissimos doloremque doloribus ducimus error eum fugit in ipsa iure nostrum officiis perspiciatis placeat quidem, ratione sint sunt velit?
+                    </div>
+                </div>
+                <div class="row item">
+                    <div class="col col-1">like</div>
+                    <div class="col col-11">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque dicta dolores eligendi excepturi hic illum impedit itaque libero magni minus non officia perferendis quas sit veniam vitae? Aperiam, quisquam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores commodi dignissimos doloremque doloribus ducimus error eum fugit in ipsa iure nostrum officiis perspiciatis placeat quidem, ratione sint sunt velit?
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-3 float-r">
+                <span>Group List</span>
+                <div class="row item">
+                    <div class="col col-3">IMG in here</br></br></br></div>
+                    <div class="col col-8 group">
+                        <div class="row group_name">group name and st</div>
+                        <div class="row message float-r">some message</div>
+                    </div>
+                </div>
+                <div class="row item">
+                    <div class="col col-3">IMG in here</br></br></br></div>
+                    <div class="col col-8 group">
+                        <div class="row group_name">group name and st</div>
+                        <div class="row message float-r">some message</div>
+                    </div>
+                </div>
+                <div class="row item">
+                    <div class="col col-3">IMG in here</br></br></br></div>
+                    <div class="col col-8 group">
+                        <div class="row group_name">group name and st</div>
+                        <div class="row message float-r">some message</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row footer">
+    <div class="col col-8">8</div>
+    <div class="col col-2 float-r">2</div>
+</div>
+
+

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .warpper{
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+        .row:before,
+        .row:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+
+
+
+
+
+        .header{
+            background-color: rgb(84, 86, 82);
+        }
+        .login-group{
+            text-align: right;
+        }
+        .nav-group a,.login-group a{
+            display: inline-block;
+            color: rgb(187,187,187);
+            font-size: 12px;
+            padding: 6px;
+            margin-left: 8px;
+        }
+        .nav-group a:hover,.login-group a:hover{
+            color: azure;
+        }
+        .second-nav{
+            background-color: #F0F6F3;
+        }
+
+
+
+
+
+
+        .logo{
+            padding: 15px 0;
+        }
+        .logo a{
+            font-size: 27px;
+            color: rgb(3, 123, 130);
+            font-family:"Helvetica","Arial","sans-serif";
+        }
+        .second-nav-link{
+            padding: 25px 0;
+        }
+        .second-nav-link a{
+            color: rgb(3, 123, 130);
+            font-size: 16px;
+            padding: 10px;
+        }
+        .second-nav-link a:hover{
+            background-color: #0E959D;
+        }
+        form{
+            line-height: 75px;
+        }
+        input{
+            border: 2px #E1E9E1 solid;
+            padding:5px;
+            color: #000222;
+        }
+        form button{
+            position: relative;
+            right: 35px;
+            margin-right: 10px;
+            padding: 0 5px;
+            border: none;
+        }
+
+
+
+
+
+
+
+
+
+        .col {
+            float: left;
+        }
+        .col-1{
+            width:8.333333333%
+        }
+        .col-2{
+            width: 16.66666666%;
+        }
+        .col-4{
+            width:33.333333333%;
+        }
+        .col-6{
+            width: 50%;
+        }
+        .col-8{
+            width: 66.666666666%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="row header">
+        <div class="col col-8 nav-group">
+            <a href="">豆瓣</a>
+            <a href="">读书</a>
+            <a href="">电影</a>
+            <a href="">音乐</a>
+            <a href="">同城</a>
+            <a href="">小组</a>
+            <a href="">阅读</a>
+            <a href="">FM</a>
+            <a href="">时间</a>
+            <a href="">豆品</a>
+            <a href="">更多</a>
+        </div>
+        <div class="col col-4 login-group">
+            <a href="">下载豆瓣客户端</a>
+            <a href="">登录</a>
+            <a href="">注册</a>
+        </div>
+    </div>
+
+
+    <div class="row content">
+        <div class="row second-nav">
+            <div class="warpper">
+                <div class="col col-2 logo"><a href="">豆瓣小组</a></div>
+                <div class="col col-6 second-nav-link">
+                    <a href="">精选</a>
+                    <a href="">文化</a>
+                    <a href="">行摄</a>
+                    <a href="">娱乐</a>
+                    <a href="">时尚</a>
+                    <a href="">生活</a>
+                    <a href="">科技</a>
+                </div>
+                <div class="col col-4 search">
+                    <form action="">
+                        <input type="text" placeholder="小组 话题">
+                        <button><img src="search.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

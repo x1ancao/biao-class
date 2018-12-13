@@ -1,0 +1,23 @@
+<script>
+    //造一个函数glue，将数组内所有的元素连接起来，同时可以指定用什么连接它们
+
+    function glue(arr, dot) {
+        str = ''
+        for (let i = 0; i < arr.length; i++) {
+            if (i == arr.length - 1) {
+                mark = ''
+            }
+            else {
+                mark = dot
+            }
+            str = str + arr[i] + mark
+        }
+        return str
+    }
+
+    let list = ['A', 'B', 'C', 'D'];
+    let dot = "*";
+
+    result = glue(list, dot)
+    document.write(result)
+</script>

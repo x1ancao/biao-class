@@ -1,0 +1,20 @@
+<script>
+    //造一个函数sumEven，求数组中偶数元素的和
+
+    function sunEven(arr) {
+        let sum = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                sum += arr[i]
+            }
+            else {
+                continue;
+            }
+        }
+
+        return sum
+    }
+    let list = [1, 2, 3, 4, 5, 6]
+    result = sunEven(list)
+    document.write(result)
+</script>

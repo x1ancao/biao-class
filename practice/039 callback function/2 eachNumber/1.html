@@ -1,0 +1,91 @@
+<meta chatser='utf-8'>
+<script>
+    //造一个基础函数eachNumber()，可以传入数字组成的数组和一个回调函数
+
+    // 基于此函数造出：
+
+    //1, evenNumber()，evenNumber([1, 2, 3, 4]) // [2, 4]
+    //2, oddNumber()，oddNumber([1, 2, 3, 4] // [1, 3])
+    //3, sum()，sum([1, 2]) // 3
+    //4, max()，max([1, 2, 3, 4]) // 4
+    //5, min()，min([1, 2, 3, 4]) // 1
+
+
+    function eachNumber(list, func) {
+        for (let i = 0; i < list.length; i++) {
+            func(list[i]);
+        }
+    }
+
+
+
+    //1, evenNumber()，evenNumber([1, 2, 3, 4]) // [2, 4]
+
+    // function evenNumber(arg) {
+    //     let arr = [];
+    //     eachNumber(arg, function (it) {
+    //         if (it % 2 == 0) {
+    //             arr.push(it)
+    //         }
+    //     });
+    //     return arr;
+    // }
+    // console.log(evenNumber([1, 2, 3, 4,]))
+
+
+    //2, oddNumber()，oddNumber([1, 2, 3, 4] // [1, 3])
+
+    // function oddNumber(arg) {
+    //     let arr = [];
+    //     eachNumber(arg, function (it) {
+    //         if (it % 2 != 0) {
+    //             arr.push(it)
+    //         }
+    //     });
+    //     return arr;
+    // }
+    // console.log(oddNumber([1, 2, 3, 4,]))
+
+
+    //3, sum()，sum([1, 2]) // 3
+
+    // function sum(arg) {
+    //     let x = 0;
+    //     eachNumber(arg, function (it) {
+    //         x += it;
+    //     });
+    //     return x;
+    // }
+    // console.log(sum([1, 2, 3, 4,]))
+
+    //4, max()，max([1, 2, 3, 4]) // 4
+
+    // function max(arg) {
+    //     let x = 0;
+    //     eachNumber(arg, function (it) {
+    //         if (it > x) {
+    //             x = it;
+    //         }
+    //     });
+    //     return x;
+    // }
+    // console.log(max([-2, 2, 3, -3,]))
+
+
+    //5, min()，min([1, 2, 3, 4]) // 1
+
+    // function min(arg) {
+    //     let x;
+    //     eachNumber(arg, function (it) {
+    //         if (x === undefined) {
+    //             x = it;
+    //             // return;
+    //         }
+    //         if (it < x) {
+    //             x = it;
+    //         }
+    //     });
+    //     return x;
+    // }
+    // console.log(min([-1, -5, 3, 10, 1]))
+</script>

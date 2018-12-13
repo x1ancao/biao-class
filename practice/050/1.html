@@ -1,0 +1,71 @@
+<meta charset="utf-8">
+<style>
+    :root {
+        font-family: sans-serif;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td,
+    th {
+        text-align: left;
+        border: 1px solid;
+        padding: .5em;
+    }
+</style>
+<h1>背背山中学花名册</h1>
+<table>
+    <thead>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>分数</th>
+        <th>操作</th>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+</table>
+<script>
+    let users = [
+        {
+            name: '娃哈哈',
+            gender: '男',
+            score: 99,
+        },
+        {
+            name: '来设定',
+            gender: '女',
+            score: 50,
+        },
+        {
+            name: '在开始',
+            gender: '男',
+            score: 60,
+        },
+    ]
+    boot();
+    function boot() {
+        render();
+    }
+    function render() {
+        tbody.innerHTML = ''
+        users.forEach((user, i) => {
+            let tr = document.createElement('tr');
+            let tbody = document.querySelector('#tbody')
+            tr.innerHTML = `
+            <td>${user.name}</td>
+            <td>${user.gender}</td>
+            <td>${user.score}</td>
+            <td><button class="del">删除</button></td>
+            `;
+            tbody.appendChild(tr)
+            let delButton = tr.querySelector('.del');
+            delButton.addEventListener('click', () => {
+                users.splice(i,1);
+                tr.remove();
+            });
+        })
+    }
+</script>

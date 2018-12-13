@@ -1,0 +1,55 @@
+<style>
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+
+    .row:before,
+    .row:after{
+        content:"";
+        display: block;
+        clear: both;
+    }
+    .row{
+        border: crimson 2px solid;
+        padding: 10px;
+    }
+    .col{
+        border: blue 2px solid;
+        float: left;
+    }
+
+
+
+
+
+    .col-4{
+        width: 16.66666666%;
+    }
+
+
+    .col-10{
+        width: 41.6666666%;
+    }
+    .col-8{
+        width: 33.333333333%;
+    }
+
+</style>
+
+
+<div class="row">
+    <div class="col col-8">8</div>
+    <div class="col col-8">8</div>
+    <div class="col col-8">8</div>
+</div>
+
+
+<div class="row">
+    <div class="col col-10">10</div>
+    <div class="col col-4">4</div>
+    <div class="col col-10">10</div>
+</div>

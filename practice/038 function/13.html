@@ -1,0 +1,15 @@
+<script>
+    // 造一个函数arrayMaker，生成新数组，数组中的元素是递增的，步长为1
+
+    function arrayMaker(step) {
+        list = []
+
+        for (let i = 1; i <= step; i++) {
+            list.push(i)
+        }
+        return list
+    }
+
+    result = arrayMaker(10)
+    document.write(result)
+</script>

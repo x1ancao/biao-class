@@ -1,0 +1,20 @@
+<script>
+    //造一个函数printer
+    //printer(arr, jumper) 会分别打印数组arr中的每一项，且不打印jumper（跳过jumper
+
+    function printer(arr, jumper) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == jumper) {
+                continue;
+            }
+            else {
+                document.write(arr[i])
+            }
+        }
+    }
+
+    let arr = [1, 2, 3, 4, 5]
+    let jumper = 3
+
+    printer(arr, jumper)
+</script>

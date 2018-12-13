@@ -1,0 +1,158 @@
+.wrapper{
+    max-width: 1226px;
+    margin: 0 auto;
+}
+.top-nav{
+    background-color: #333333;
+}
+.top-nav a{
+    color: #b0b3b4;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 40px;
+    padding-right: 10px;
+}
+.top-nav a:hover{
+    color: #ffffff;
+}
+.top-nav .link-group a:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    position: relative;
+    left:5px;
+    top: 3px;
+    background-color: #424242;
+
+}
+
+a[class="shop-cart"]{
+    background-color: #394043;
+    padding: 0 13px;
+}
+a[class="shop-cart"]:hover{
+    background-color: #ffffff;
+    color: #FF6700;
+}
+
+
+.nav{
+    padding: 25px 0 10px 0;
+}
+.logo a{
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    background-color: #FF6700;
+    background-image: url("../img/mi-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.festival a{
+    display: inline-block;
+    width: 163px;
+    height: 66px;
+    background-image: url("../img/b7acecd8-729b-dc3a-6a93-1eeb82cd0846.webp");
+    position: relative;
+    top:-10px;
+    left: 8px;
+    background-repeat: no-repeat;
+}
+
+.nav-link-bar{
+    padding-top:15px;
+}
+.nav-link-bar a{
+    color: #000000;
+    margin-left: 15px;
+}
+.nav-link-bar a:hover{
+    color:#FF6700;
+}
+
+.search-bar{
+    /*padding-top: 5px;*/
+}
+.search-bar input{
+    border: 1px #b0b3b4 solid;
+    width: 245px;
+    height: 50px;
+    padding-left: 10px;
+}
+.search-bar button{
+    height: 50px;
+    width: 50px;
+    background-color: #00B368;
+    border: 1px #b0b3b4 solid;
+}
+
+
+.carousel{
+    height: 460px;
+    width: 1226px;
+    background-image: url("../img/xmad_15378467692556_lnrbU.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-link-group{
+    width: 234px;
+    padding:20px 0 20px 0;
+    background-color: rgba(0, 0, 0, .4);
+    display: inline-block;
+}
+.carousel-link-group a{
+    color: #ffffff;
+    display: block;
+    line-height: 42px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+.carousel-link-group a:hover{
+    background-color: #FF6700;
+}
+.carousel .icon-left ,.carousel .icon-right{
+    height: 69px;
+    width: 42px;
+    background: url("../img/icon-slides.png") no-repeat;
+    position:relative;
+    display: inline-block;
+    top: 45%;
+}
+.carousel .icon-right{
+    background-position: -42px 0px;
+}
+
+
+
+.title{
+    height: 30px;
+    width: 100%;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.title h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.col.title-right{
+    float: right;
+}
+
+.promo-card{
+    width: 100%;
+    height: 620px;
+    background-color: #b0b3b4;
+}
+.card-info{
+    width: 234px;
+    height: 600px;
+    background-color: #0E959D;
+    clear: both;
+}
+.card-group{
+    /*margin-right: 10px;*/
+    height: 600px;
+    background-color: #3a8bbb;
+}

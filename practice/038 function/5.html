@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--中文乱码--->
+</head>
+
+<body>
+    <script>
+        //  造一个函数glue，将数组内所有的元素连接起来
+        function glue(list) {
+            let str = ''
+            for (let i = 0; i < list.length; i++) {
+                str += list[i]  //字符串链接
+            }
+
+            //for循环外 str已经被覆盖为累加的目标字符串
+            return str
+        }
+
+        let list = ['王花花', '刘备备', '李拴蛋',];
+        result = glue(list)
+        document.write(result)
+    </script>
+</body>
+
+</html>

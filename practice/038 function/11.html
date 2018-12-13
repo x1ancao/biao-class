@@ -1,0 +1,18 @@
+<script>
+    //造一个函数filterOdd，返回新数组，且数组中只有奇数
+
+
+    function filterOdd(arr) {
+        odd = []
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                odd.push(arr[i])
+            }
+        }
+        return odd
+    }
+
+    let list = ['1', '2', '3', '4', '5']
+    result = filterOdd(list)
+    document.write(result)
+</script>
